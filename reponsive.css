@@ -1,0 +1,84 @@
+@media(max-width:600px) {
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        font-family: 'Rubik', sans-serif;
+        height: 50px;
+        margin: 0px 20px; /* Adjusted for better spacing on small screens */
+    }
+
+    .logo h3 {
+        margin: 0; /* Ensure no extra margin */
+    }
+
+    .navitems {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .navitems ul {
+        flex-direction: column;
+        position: absolute;
+        top: 50px; /* Adjusted to move the dropdown below the nav bar */
+        visibility: hidden;
+        opacity: 0; /* Added for smooth transition */
+        background-color: rgba(0, 0, 0, 0.8); /* Added background color for better visibility */
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        transition: visibility 0.3s, opacity 0.3s; /* Smooth transition */
+        right: 0px;
+    }
+
+    .navitems ul li {
+        width: 100%;
+    }
+
+    .navitems ul li a {
+        display: block;
+        padding: 10px;
+        color: whitesmoke;
+        text-align: center;
+        font-weight: 700;
+        text-decoration: none; /* Added to remove underline from links */
+    }
+
+    .menubar {
+        display: flex;
+        cursor: pointer; /* Added cursor to indicate clickable area */
+    }
+
+    .navitems:hover ul,
+    .menubar:hover + ul,
+    .navitems ul:hover {
+        visibility: visible;
+        opacity: 1; /* Make items visible and fully opaque */
+    }
+
+    .cards_Heading {
+        color: white;
+        transform: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 10rem auto;
+    }
+
+    .cards_Heading h2 {
+        text-align: center;
+        font-size: 60px;
+    }
+}
+
+@media(max-width:400px) {
+    .Banner2 img {
+        width: 100%;
+        height: auto;
+    }
+}
